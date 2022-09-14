@@ -20,6 +20,9 @@ public class restController {
     public String sayHelloParam(@PathVariable String name){
         return "Hello"+name+ " from BridgeLabs.";
     }
-
+    @PostMapping ("/post")
+    public String sayHello(@RequestBody User u){
+        return "Hello"+u.getFirstName()+" "+u.getLastName()+ " from BridgeLabs.";
+    }
     }
 
