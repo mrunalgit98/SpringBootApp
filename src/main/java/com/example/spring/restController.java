@@ -16,10 +16,10 @@ public class restController {
     public String sayHello(@RequestParam(value = "name")String Name){
         return "Hello " + Name+ " from BridgeLabs.";
     }
-//    @RequestMapping("/param/{name}")
-//    public String sayHelloParam(@PathVariable String name){
-//        return "Hello"+name+ " from BridgeLabs.";
-//    }
+    @RequestMapping("/param/{name}")
+    public String sayHelloParam(@PathVariable String name){
+        return "Hello"+name+ " from BridgeLabs.";
+    }
 
     }
 
