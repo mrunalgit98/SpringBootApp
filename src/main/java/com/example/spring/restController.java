@@ -24,5 +24,9 @@ public class restController {
     public String sayHello(@RequestBody User u){
         return "Hello"+u.getFirstName()+" "+u.getLastName()+ " from BridgeLabs.";
     }
+    @PutMapping("/put/firstName")
+    public String sayHello1(@PathVariable String firstName,@RequestParam(value = "lastName")String lastName){
+        return "hello " + firstName + " " + lastName ;
+    }
     }
 
